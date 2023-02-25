@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image carousel</title>
+
+    <!--Bootstrap CSS CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--CSS External-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--bootstrap JS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
+
+    <!--font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--Google web fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@900&family=Lilita+One&family=Montserrat:wght@100;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--heading section-->
+    <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid justify-content-start">
+            <button class="btn btn-outline-success me-2" type="button">Home</button>
+            <button class="btn btn-outline-success me-2" type="button"> Wallpapers</button>
+            <button class="btn btn-outline-success me-2" type="button">About Us</button>
+            <button class="btn btn-outline-success me-2" type="button">Contact ME</button>
+        </form>
+        </nav>
+
+    <h1><span id="was">W</span>allpaper <span id="cas">C</span>arousel</h1> 
+
+    <!--image carousel-->
+    <div class="container">
+        <div class="image fade">
+            <img src="images/image1.jpg" width="100%" alt="lakeview">
+        </div>
+        <div class="image fade">
+            <img src="images/image2.jpg" width="100%" alt="ice-top">
+        </div>
+        <div class="image fade">
+            <img src="images/image3.jpg" width="100%" alt="ocean-side">
+        </div>
+        <div class="image fade">
+            <img src="images/image4.jpg" width="100%" alt="valley">
+        </div>
+        <div class="image fade">
+            <img src="images/image5.jpg" width="100%" alt="bridge">
+        </div>
+        <div class="image fade">
+            <img src="images/image6.jpg" width="100%" alt="metropolitan city">
+        </div>
+        <div class="image fade">
+            <img src="images/image7.jpg" width="100%" alt="snowfall">
+        </div>
+        <div class="image fade">
+            <img src="images/image8.jpg" width="100%" alt="lighthouse">
+        </div>
+        <div class="image fade">
+            <img src="images/image9.jpg" width="100%" alt="water reservoir">
+        </div>
+        <div class="image fade">
+            <img src="images/image10.jpg" width="100%" alt="canopies">
+        </div>
+    
+    
+        <!--directions-->
+        <i onclick="show_image(-1)" id="prev" class="fa-solid fa-chevron-left"></i>
+        <i onclick="show_image(1)" id="next" class="fa-solid fa-chevron-right"></i>
+
+        <!--location-->
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
